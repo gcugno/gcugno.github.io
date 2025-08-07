@@ -2418,18 +2418,20 @@ input, select, textarea {
     
     ul2.feature-icons {
         list-style: none;
+		padding-left: 0;
+  		margin-left: 0;
         /*padding-left: 0;*/
     }
 
         ul2.feature-icons li2 {
             text-decoration: none;
-            display: inline-block;
+            display: block;
             margin: 0 0 0.5em 0;
             padding: 0 0 0 0.6em;
             position: relative;
             vertical-align: middle;
-            width: 120%;
-            margin-left: 1.5em;
+            width: auto;
+            margin-left: 0;
         }
 
             ul2.feature-icons li2:before {
