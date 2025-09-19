@@ -80,7 +80,9 @@
 									<p></p>
 									<div class="features">
                                         <article>
-                                            <a href="#" class="image"><img src="images/Spectrum_CTChab.pdf" alt="" /></a>
+                                            <a href="images/Spectrum_CTChab_whitebkg.pdf" class="image enlargeable" data-caption="Observed spectrum of CT Cha b. Top left: Calibrated JWST/MIRI MRS data of the CT Cha system, showcasing the stellar point-spread function dominating the image at 13.3&ndash;15.6&nbsp;&mu;m. Bottom left: A spectral cross-correlation map of the same field of view revealing the companion. A gray star marks the location of the host star. Right: Continuum-subtracted spectrum of CT Cha b (black) compared to a total model (red shaded area) composed of molecular emission from C<sub>2</sub>H<sub>6</sub>, C<sub>2</sub>H<sub>2</sub>, <sup>13</sup>CCH<sub>2</sub>, HCN, C<sub>6</sub>H<sub>6</sub>, CO<sub>2</sub>, C<sub>3</sub>H<sub>4</sub>, and C<sub>4</sub>H<sub>2</sub>, shown with models in the colors below. The four panels on top show selected wavelength regions that contain important molecular features.">
+												<img src="images/Spectrum_CTChab_whitebkg.pdf" alt="" />
+											</a>
                                             <!--a href="#" class="image"><img src="images/JWST.jpg" alt="" /></a-->
                                             <div class="inner">
                                                 <h4>A carbon-rich disk surrounding a planetary-mass companion </h4>
@@ -92,7 +94,9 @@
                                             </div>
                                         </article>
 										<article>
-                                            <a href="#" class="image"><img src="images/Residuals_all_bands_with_PSF.pdf" alt="" /></a>
+                                            <a href="images/Residuals_all_bands_with_PSF.pdf" class="image enlargeable" data-caption="Wavelength-combined images before (first column, only channels 1A and 2A shown) and after (second to fourth columns, channels between 1A and 2C) PSF subtraction. The band is reported on the top left corner of each panel. The corresponding wavelength range is shown on the bottom left corner of each panel, while the SNR of the detection is indicated on the top right corner. The color scale is the same in every image, and the spatial axes follow the MRS IFU internal coordinates. A scale is provided for channels 1 and 2 in the panels of the second column, while arrows pointing North and East in the sky coordinates are reported on panels in the third column. The central dashed circle represents the FWHM of the stellar PSF. With increasing wavelength, the size of the PSF increases and the companion separation falls to &sim;1.5&nbsp;&lambda;/D.">
+												<img src="images/Residuals_all_bands_with_PSF.pdf" alt="" />
+											</a>
                                             <!--a href="#" class="image"><img src="images/JWST.jpg" alt="" /></a-->
                                             <div class="inner">
                                                 <h4>The first spectrum of a circumplanetary disk</h4>
@@ -163,9 +167,11 @@
                                     <h3>Selected publications</h3>
                                     <p>Here you can find a selected list of refereed publications that I contributed to.</p>
                                     <ul2 class="feature-icons">
-                                        <li2 class="icon solid fa-file"> <strong>G. Cugno,</strong> P. Patapis, A. Banzatti, et al.; 2023, The Astrophysical Journal Letters, 966, 21, 
+                                        <li2 class="icon solid fa-file"> <strong>G. Cugno</strong> &amp; Sierra L. Grant; 2025, The Astrophysical Journal Letters, in press, 
+                                            <a href="https://arxiv.org/abs/2509.15209" target="_blank">A carbon-rich disk surrounding a planetary-mass companion;</a></li2>
+										<li2 class="icon solid fa-file"> <strong>G. Cugno,</strong> P. Patapis, A. Banzatti, et al.; 2025, The Astrophysical Journal Letters, 966, 21, 
                                             <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...966L..21C/abstract" target="_blank">Mid-infrared Spectrum of the Disk around the Forming Companion GQ Lup B Revealed by JWST/MIRI;</a></li2>
-                                        <li2 class="icon solid fa-file"> <strong>G. Cugno,</strong> Y. Zhou, T. Thanathibodee, et al.; 2023, The Astronomical Journal, 166, 162, 
+                                        <li2 class="icon solid fa-file"> <strong>G. Cugno,</strong> Y. Zhou, T. Thanathibodee, et al.; 2024, The Astronomical Journal, 166, 162, 
                                             <a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..162C/abstract" target="_blank">MagAO-X and HST High-contrast Imaging of the AS209 Disk at H&alpha;</a></li2>
                                         <li2 class="icon solid fa-file"> J. Hayoz, <strong>G. Cugno,</strong> S. Quanz, et al.; 2023, Astronomy &amp; Astrophysics, 678, 178, 
                                             <a href="https://ui.adsabs.harvard.edu/abs/2023A%26A...678A.178H/abstract" target="_blank">CROCODILE. Incorporating medium-resolution spectroscopy of close-in directly imaged exoplanets into atmospheric retrievals via cross-correlation </a></li2>
@@ -575,6 +581,35 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+	
+	<!-- Modal for enlarged image -->
+	<div id="imgModal" class="modal">
+  		<span class="close">&times;</span>
+  		<img class="modal-content" id="modalImg">
+  		<div id="caption"></div>
+	</div>
+	
+	<script>
+	var modal = document.getElementById("imgModal");
+	var modalImg = document.getElementById("modalImg");
+	var captionText = document.getElementById("caption");
+	var span = document.getElementsByClassName("close")[0];
 
-	</body>
+	document.querySelectorAll(".enlargeable").forEach(function(img) {
+  		img.addEventListener("click", function(e) {
+    		e.preventDefault();
+    		modal.style.display = "block";
+    		modalImg.src = this.getAttribute("href") || this.src;
+    		captionText.innerHTML = this.getAttribute("data-caption") || this.alt;
+  		});
+	});
+
+	span.onclick = function() {
+  		modal.style.display = "none";
+	}
+	modal.onclick = function(e) {
+  		if (e.target === modal) modal.style.display = "none";
+	}
+	</script>
+	
 </html>
