@@ -6,9 +6,47 @@
 -->
 <html>
 	<head>
-		<title>Read Only by HTML5 UP</title>
+		<title>Dr. Gabriele Cugno – Astrophysicist</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Postdoctoral researcher Dr. Gabriele Cugno studies how planets and moons form using JWST and ground-based telescopes at the University of Zürich." />
+		<meta name="author" content="Dr. Gabriele Cugno" />
+		<meta name="theme-color" content="#0F0E2E" />
+		<link rel="canonical" href="https://gcugno.github.io/" />
+		<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Dr. Gabriele Cugno" />
+		<meta property="og:title" content="Dr. Gabriele Cugno – Astrophysicist" />
+		<meta property="og:description" content="I study how planets and moons form using the world's most advanced telescopes." />
+		<meta property="og:url" content="https://gcugno.github.io/" />
+		<meta property="og:image" content="https://gcugno.github.io/images/social-home.jpg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content="Sunset over an observatory ridge in Chile" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Dr. Gabriele Cugno – Astrophysicist" />
+		<meta name="twitter:description" content="I study how planets and moons form using the world's most advanced telescopes." />
+		<meta name="twitter:image" content="https://gcugno.github.io/images/social-home.jpg" />
+		<meta name="twitter:image:alt" content="Sunset over an observatory ridge in Chile" />
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Dr. Gabriele Cugno",
+			"url": "https://gcugno.github.io/",
+			"jobTitle": "Postdoctoral Researcher in Astrophysics",
+			"affiliation": {
+				"@type": "Organization",
+				"name": "University of Zürich",
+				"url": "https://www.uzh.ch/"
+			},
+			"sameAs": [
+				"https://github.com/gcugno",
+				"https://www.linkedin.com/in/gabriele-cugno-65552a2a2/"
+			],
+			"knowsAbout": ["Planet formation", "Circumplanetary disks", "Protoplanets", "Protoplanetary disks", "JWST"]
+		}
+		</script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<!-- Google tag (gtag.js) -->
@@ -26,17 +64,29 @@
 			<section id="header">
 				<header>
 					<span class="image avatar"><img src="images/Portrait.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Gabriele Cugno</a></h1>
+					<h1 id="logo"><a href="#">Dr. Gabriele Cugno</a></h1>
 					<p>Postdoctoral researcher in astrophysics,<br />
-					University of Zuerich</p>
+					University of Zürich</p>
 				</header>
 				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Research</a></li>
-						<li><a href="#three">Output</a></li>
-						<li><a href="#four">Contact</a></li>
-					</ul>
+    				<ul>
+        				<li><a href="#one" class="active">About</a></li>
+
+						<li class="has-submenu">
+							<div class="nav-parent">
+								<a href="#two">Research</a>
+								<button type="button" class="submenu-toggle" aria-expanded="false" aria-label="Show Research pages"></button>
+							</div>
+							<ul class="submenu">
+								<li><a href="cpds.html">Circumplanetary disks</a></li>
+								<li><a href="protoplanets.html">Protoplanets</a></li>
+								<li><a href="disk.html">Circumstellar disks</a></li>
+							</ul>
+        				</li>
+
+        				<li><a href="#three">Output</a></li>
+        				<li><a href="#four">Contact</a></li>
+    				</ul>
 				</nav>
 				<footer>
 					<ul class="icons">
@@ -60,121 +110,99 @@
 						<!-- One -->
 							<section id="one">
 								<div class="image main" data-position="center">
-									<img src="images/Cile2_46.jpg" alt="" />
+									<img src="images/Cile2_46_no-house.png" alt="Sunset over an observatory ridge in Chile" />
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>Gabriele Cugno</h2>
-										<p>I am a research fellow in the <a href="https://www.astro.uzh.ch/en.html">Department of Astrophysics</a> at the University of Zuerich.</p>
+										<h2>Dr. Gabriele Cugno</h2>
+										<p>I study how planets and moons form using the world's most advanced telescopes.</p>
 									</header>
-                                    <p> I explore how <strong><font color="#0F0E2E">planets and moons are born</font></strong>. My current work focuses on <strong><font color="#0F0E2E">circumplanetary disks (CPDs)</font></strong>—tiny disks of gas and dust that swirl around young giant planets. These disks are not only the cradles of moon formation, but they also shape the final outcome of planet formation itself. With the James Webb Space Telescope (JWST), we can now peek into these hidden worlds for the first time, revealing their chemistry and physics in incredible detail. I lead this exploration through <strong><font color="#0F0E2E">three JWST programs totaling over 70 hours of observing time that will be executed during Cycle 4</font></strong>.</br></br>
-										I’m also fascinated by <strong><font color="#0F0E2E">catching planets in the act of forming</font></strong>. Using telescopes both on the ground and in space—JWST, Hubble, ALMA, and the VLT—I search for newborn planets as they emerge from the clouds of their birth. Soon, with the <strong><font color="#0F0E2E">Extremely Large Telescope (ELT)</font></strong>, I’ll be able to push these discoveries even further, bringing us closer than ever to understanding how planets and moons come to life.</br></br>
-                                    Please find an introduction to some of my latest projects below. </p>
+									<p class="home-intro">I am a postdoctoral researcher in the <a href="https://www.astro.uzh.ch/en.html">Department of Astrophysics</a> at the University of Zürich. I observe newborn giant planets and the disks that surround them, combining JWST with powerful ground-based telescopes to understand how planets grow and how moon systems begin.</p>
+									<ul class="actions home-actions">
+										<li><a href="#two" class="button primary scrolly">Explore my research</a></li>
+										<li><a href="#three" class="button primary scrolly">View publications</a></li>
+									</ul>
+									<div class="current-highlights">
+										<h3>Current highlights</h3>
+										<div class="highlight-grid">
+											<article>
+												<p class="highlight-label">Community</p>
+												<h4>Circumplanetary Disks in the JWST Era</h4>
+												<p>I co-lead an ISSI International Team bringing observers and theorists together to shape the next phase of CPD research.</p>
+												<a href="https://www.issibern.ch/scientific-opportunities/international-teams/?_t_states=active-teams">Explore the ISSI team</a>
+											</article>
+											<article>
+												<p class="highlight-label">New paper · 2026</p>
+												<h4>Searching for protoplanets with JWST/MIRI</h4>
+												<p>Our MIRI survey shows that protoplanets remain elusive even at long wavelengths, while some planet-forming disks are detected.</p>
+												<a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260913123C/abstract">Read the paper</a>
+											</article>
+										</div>
+									</div>
 								</div>
 							</section>
 
 						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Research highlights</h3>
-									<p></p>
-									<div class="features">
-                                        <article>
-                                            <a href="images/Spectrum_CTChab_whitebkg.jpeg" class="image enlargeable" data-caption="Observed spectrum of CT Cha b. Top left: Calibrated JWST/MIRI MRS data of the CT Cha system, showcasing the stellar point-spread function dominating the image at 13.3&ndash;15.6&nbsp;&mu;m. Bottom left: A spectral cross-correlation map of the same field of view revealing the companion. A gray star marks the location of the host star. Right: Continuum-subtracted spectrum of CT Cha b (black) compared to a total model (red shaded area) composed of molecular emission from C<sub>2</sub>H<sub>6</sub>, C<sub>2</sub>H<sub>2</sub>, <sup>13</sup>CCH<sub>2</sub>, HCN, C<sub>6</sub>H<sub>6</sub>, CO<sub>2</sub>, C<sub>3</sub>H<sub>4</sub>, and C<sub>4</sub>H<sub>2</sub>, shown with models in the colors below. The four panels on top show selected wavelength regions that contain important molecular features.">
-												<img src="images/Spectrum_CTChab_whitebkg.jpeg" alt="" />
-											</a>
-                                            <!--a href="#" class="image"><img src="images/JWST.jpg" alt="" /></a-->
-                                            <div class="inner">
-                                                <h4>A carbon-rich disk surrounding a planetary-mass companion </h4>
-                                                <p>  Using JWST, we captured the first medium-resolution spectrum of a circumplanetary disk around the young companion CT Cha b. The disk is strikingly carbon-rich, hosting at least seven carbon-bearing molecules and one isotopologue, while the host star’s disk shows none. 
-                                                </p>
-                                                <ul class="feature-icons">
-                                                    <li class="icon solid fa-book"><a href="https://iopscience.iop.org/article/10.3847/2041-8213/ae0290">2025 paper</a></li>
-                                                    <li class="icon solid fa-newspaper"><a href="https://science.nasa.gov/missions/webb/nasas-webb-telescope-studies-moon-forming-disk-around-massive-planet/">NASA press release</a></li>
-                                                </ul>
-                                            </div>
-                                        </article>
-										 <article>
-                                            <a href="images/Proper_motion_AS209.jpeg" class="image enlargeable" data-caption="Projected location of AS 209bkg in the AS 209 disk. On the right side, the millimeter image is reported, showcasing a series of dust rings (Andrews et al. 2018). On the left side, the CO gas as measured by the DSHARP program (Andrews et al. 2018; Guzm´an et al. 2018) is reported. AS 209bkg shines through the deep outer CO gap. Grey crosses mark the expected position of AS 209bkg in 2050 and 2075. ">
-												<img src="images/Proper_motion_AS209.jpeg" alt="" />
-											</a>
-                                            <!--a href="#" class="image"><img src="images/JWST.jpg" alt="" /></a-->
-                                            <div class="inner">
-                                                <h4>Direct Measurement of Extinction in a Planet-Hosting Gap </h4>
-                                                <p>   Recent disk observations have revealed multiple indirect signatures of forming gas giant planets, but high-contrast imaging has rarely confirmed the presence of the suspected perturbers. One possible explanation is that extinction from circumstellar material obscures their emission. Our results cofnirm that extinction plays a significant role in hiding protoplanet emission, even in the near-IR.
-                                                </p>
-                                                <ul class="feature-icons">
-                                                    <li class="icon solid fa-book"><a href="https://arxiv.org/pdf/2509.26617">2025 paper</a></li>
-                                                </ul>
-                                            </div>
-                                        </article>
-										<article>
-                                            <a href="images/Residuals_all_bands_with_PSF.jpeg" class="image enlargeable" data-caption="Wavelength-combined images before (first column, only channels 1A and 2A shown) and after (second to fourth columns, channels between 1A and 2C) PSF subtraction. The band is reported on the top left corner of each panel. The corresponding wavelength range is shown on the bottom left corner of each panel, while the SNR of the detection is indicated on the top right corner. The color scale is the same in every image, and the spatial axes follow the MRS IFU internal coordinates. A scale is provided for channels 1 and 2 in the panels of the second column, while arrows pointing North and East in the sky coordinates are reported on panels in the third column. The central dashed circle represents the FWHM of the stellar PSF. With increasing wavelength, the size of the PSF increases and the companion separation falls to &sim;1.5&nbsp;&lambda;/D.">
-												<img src="images/Residuals_all_bands_with_PSF.jpeg" alt="" />
-											</a>
-                                            <!--a href="#" class="image"><img src="images/JWST.jpg" alt="" /></a-->
-                                            <div class="inner">
-                                                <h4>The first spectrum of a circumplanetary disk</h4>
-                                                <p>Applying high-contrast imaging techniques to MIRI Medium Resolution Spectrograph (MRS) data, I detected emission from the forming companion GQ Lup B between 5 and 12 μm and extract its spectrum. This is the first mid-IR spectrum obtained from a companion still interacting with the disk of its primary.
-                                                </p>
-                                                <ul class="feature-icons">
-                                                    <li class="icon solid fa-book"><a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...966L..21C/abstract">2024 paper</a></li>
-                                                </ul>
-                                            </div>
-                                        </article>
-                                        <article>
-                                            <a href="#" class="image"><img src="images/F410M_diag_masked.pdf" alt="" /></a>
-                                            <!--a href="#" class="image"><img src="images/JWST.jpg" alt="" /></a-->
-                                            <div class="inner">
-                                                <h4>Imaging the youngest planets with JWST</h4>
-                                                <p>I am participating in several observational programs using the JWST to image forming planets still embedded in the circumstellar disks. As part of the NIRCam GTO program 1179, I published the first high-contrast images of a protoplanetary disk, SAO206462. We detected a companion candidate that could be responsible for launching at least one of the prominent spirals in the disk. In addition, I am the PI of GO2153, an attempt to image HD163296b with the MIRI instrument.
-                                                </p>
-                                                <ul class="feature-icons">
-                                                    <li class="icon solid fa-book"><a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240102834C/abstract">SAO206462 paper</a></li>
-                                                    <li class="icon solid fa-book"><a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240102830W/abstract">MWC758 paper</a></li>
-                                                    <li class="icon solid fa-link"><a href="https://www.stsci.edu/jwst/science-execution/program-information.html?id=2153">PID 2153 (PI: Cugno)</a></li>
-                                                </ul>
-                                            </div>
-                                        </article>
-                                        <article>
-                                            <a href="#" class="image"><img src="images/SINFONI.jpg" alt="" /></a>
-                                            <div class="inner">
-                                                <h4>Searching for molecular absorption features from a forming planet</h4>
-                                                <p>We used molecular mapping to search for absorption features produced in the photosphere of the forming planet PDS70b. No molecule could have been identified. Several scenarios, which are described and discussed in the paper, could explain the lack of molecular features.
-                                                </p>
-                                                <ul class="feature-icons">
-                                                    <li class="icon solid fa-book"><a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...653A..12C/abstract">2021 paper</a></li>
-                                                </ul>
-                                            </div>
-                                        </article>
-                                        <article>
-                                            <a href="#" class="image"><img src="images/ISPY_2.jpeg" alt="" /></a>
-                                            <div class="inner">
-                                                <h4>The ISPY search for forming planets in the <em>L'</em> band</h4>
-                                                <p>Within the NaCo-ISPY survey, we observed 50 protoplanetaru disks searching for embedded forming planets. In 2019, we discovered a new (sub-)stellar companion to R CrA. In 2022, we published the final results of the entire survey, with a particular focus on the overall population of forming planets.
-                                                </p>
-                                                <ul class="feature-icons">
-                                                    <li class="icon solid fa-book"><a href="https://ui.adsabs.harvard.edu/abs/2019A%26A...624A..29C/abstract">2019 paper</a></li>
-                                                    <li class="icon solid fa-book"><a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221115434C/abstract">2022 paper</a></li>
-                                                </ul>
-                                            </div>
-                                        </article>
-                                        <article>
-                                            <a href="#" class="image"><img src="images/Accretion_artist.jpg" alt="" /></a>
-                                            <div class="inner">
-                                                <h4>The first surveys to search for accreting protoplanets</h4>
-                                                <p>The formation of giant planets may involve accretion processes from a circumplanetary disk onto the protoplanet. This phenomenon is expected to produce H&alpha; photons which can be detected using high-contrast imaging instruments.
-                                                </p>
-                                                <ul class="feature-icons">
-                                                    <li class="icon solid fa-book"><a href="https://ui.adsabs.harvard.edu/abs/2019A%26A...622A.156C/abstract">2019 paper</a></li>
-                                                    <li class="icon solid fa-book"><a href="https://ui.adsabs.harvard.edu/abs/2020A%26A...633A.119Z/abstract">2020 paper</a></li>
-                                                    <li class="icon solid fa-book"><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..162C/abstract">2023 paper</a></li>
-                                                </ul>
-                                            </div>
-                                        </article>
-									</div>
-								</div>
-							</section>
+						<section id="two">
+							<div class="container">
+								<h3>Research</h3>
+								<p>I study how planets and moons form by combining high-contrast imaging, infrared spectroscopy, and advanced data analysis tools on facilities such as JWST, ALMA, the VLT, and soon the ELT. My work focuses on three tightly connected themes:</p>
+
+								<div class="features">
+									<!-- Circumplanetary disks -->
+									<article>
+										<a href="cpds.html" class="image">
+											<img src="images/cpds.png" alt="Artist's impression of a young planet surrounded by a circumplanetary disk" />
+											<span class="image-credit">Illustration: NASA, ESA, CSA, STScI; G. Cugno, S. Grant, J. Olmsted &amp; L. Hustak</span>
+										</a>
+										<div class="inner">
+											<h4>Circumplanetary disks</h4>
+											<p>
+												I study the compact disks of gas and dust that feed young giant planets and provide the raw material for moons. With JWST, I separate their faint light from the nearby stars and use their spectra to reveal their gas and dust properties.
+											</p>
+											<ul class="actions">
+												<li><a href="cpds.html" class="button primary small">Learn more</a></li>
+											</ul>
+										</div>
+									</article>
+
+									<!-- Protoplanets -->
+									<article>
+										<a href="protoplanets.html" class="image">
+											<img src="images/pds70.png" alt="The PDS 70 system, showing two forming planets inside a circumstellar disk" />
+											<span class="image-credit">Image: Blakely et al. (2024)</span>
+										</a>
+										<div class="inner">
+											<h4>Protoplanets</h4>
+											<p>
+												I search for young, still-forming giant planets embedded in their natal disks and characterise their light from optical to mid-infrared wavelengths. These observations reveal how bright planets glow, how quickly they are growing, and how they interact with their natal environment.
+											</p>
+											<ul class="actions">
+												<li><a href="protoplanets.html" class="button primary small">Learn more</a></li>
+											</ul>
+										</div>
+									</article>
+
+									<!-- Circumstellar disks -->
+									<article>
+										<a href="disk.html" class="image">
+											<img src="images/Proper_motion_AS209.jpeg" alt="The structured AS 209 disk and the path of a background star across its outer gap" />
+											<span class="image-credit">Figure: Cugno et al. (2025)</span>
+										</a>
+										<div class="inner">
+											<h4>Circumstellar disks</h4>
+											<p>
+								I study the broad disks around young stars, where planets take shape and carve rings, gaps, and spirals. With optical images and a new technique that uses background stars as probes, I map the material in these disks and investigate how it shapes, and sometimes hides, newborn planets.
+											</p>
+											<ul class="actions">
+												<li><a href="disk.html" class="button primary small">Learn more</a></li>
+											</ul>
+										</div>
+									</article>
+        						</div>
+    						</div>
+						</section>
+
                             
                         <!-- Two -->
                             <section id="three">
@@ -583,7 +611,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<section id="footer">
 						<div class="container">
 							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Gabriele Cugno. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</section>
@@ -597,7 +625,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js/main.js?v=20261008"></script>
 	
 	<!-- Modal for enlarged image -->
 	<div id="imgModal" class="modal">

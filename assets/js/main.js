@@ -59,6 +59,22 @@
 		// Nav.
 			var $nav_a = $nav.find('a');
 
+			$nav.find('.submenu-toggle').on('click', function(event) {
+
+				var $toggle = $(this),
+					$item = $toggle.closest('.has-submenu'),
+					isOpen = $item.hasClass('is-open');
+
+				event.preventDefault();
+				event.stopPropagation();
+
+				$item.toggleClass('is-open', !isOpen);
+				$toggle
+					.attr('aria-expanded', String(!isOpen))
+					.attr('aria-label', (!isOpen ? 'Hide' : 'Show') + ' Research pages');
+
+			});
+
 			$nav_a
 				.addClass('scrolly')
 				.on('click', function() {
